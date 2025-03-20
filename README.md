@@ -111,51 +111,22 @@ O site utiliza diversas estratégias para maximizar conversões:
 
 ## 🚀 Implantação
 
-Para implantar o site em produção, você tem várias opções:
-
-### 1. Vercel (Recomendado para Next.js)
-
-1. Crie uma conta em [vercel.com](https://vercel.com)
-2. Conecte seu repositório Git (GitHub, GitLab, Bitbucket)
-3. Selecione o repositório do Desconto Dobrado
-4. A Vercel detectará automaticamente as configurações do Next.js
-5. Clique em "Deploy" e aguarde a conclusão
-6. Seu site estará disponível em um URL do tipo: desconto-dobrado.vercel.app
-7. Opcionalmente, configure um domínio personalizado em Project Settings → Domains
-
-**Vantagens:** Deploy automático, previews para PRs, otimizações para Next.js, CDN global, SSL gratuito
-
-### 2. Netlify
-
-1. Crie uma conta em [netlify.com](https://netlify.com)
-2. Adicione um novo site a partir do repositório Git
-3. Configure o build:
-   - Build command: `npm run build`
-   - Publish directory: `.next`
-4. Clique em "Deploy site"
-
-### 3. AWS Amplify
-
-1. Acesse o AWS Amplify Console
-2. Crie um novo app e conecte ao repositório
-3. Configure usando as configurações padrão para Next.js
-4. Clique em "Save and deploy"
-
-### 4. Hospedagem própria
-
-Para hospedar em seu próprio servidor:
+Para implantar o site em produção:
 
 1. Construa a aplicação:
    ```
    npm run build
    ```
-2. Inicie o servidor:
+   ou
    ```
-   npm start
+   yarn build
    ```
-3. Configure um proxy reverso (como Nginx) apontando para a porta 3000
 
-Para instruções detalhadas de deploy, consulte o arquivo `DEPLOY.md` no repositório.
+2. Você pode hospedar facilmente em:
+   - Vercel (recomendado para Next.js)
+   - Netlify
+   - GitHub Pages
+   - AWS Amplify
 
 ## 📄 Licença
 
